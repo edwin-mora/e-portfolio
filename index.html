@@ -8,6 +8,7 @@
     <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="" href="sass/abstracts/_variables.scss" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -160,16 +161,18 @@
           <div class="about__content-skills">
             <h3 class="about__content-title">My Tech Stack</h3>
             <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Angular</div>
-              <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">MongoDb</div>
-              <div class="skills__skill">Google API</div>
+              <div class="skills__skill"><img src="./assets/svg/react.svg" alt="react" class="skills-icon">ReactJS</div>
+              <div class="skills__skill"><img src="./assets/svg/css3.svg" alt="css" class="skills-icon">CSS3</div>
+              <div class="skills__skill"><img src="./assets/svg/mongodb.svg" alt="mongodb" class="skills-icon">MongoDB</div>
+              <div class="skills__skill"><img src="./assets/svg/node.svg" alt="node" class="skills-icon">Node</div>
+             <div class="skills__skill"><img src="./assets/svg/git.svg" alt="git" class="skills-icon">Git</div>
+              <div class="skills__skill"><img src="./assets/svg/angular.svg" alt="angular" class="skills-icon">AngularJS</div>
+              <div class="skills__skill"><img src="./assets/svg/vue-js.svg" alt="vue-js" class="skills-icon">VueJS</div>
+              <div class="skills__skill"><img src="./assets/svg/tailwind-css.svg" alt="tailwind-css" class="skills-icon">TailwindCSS</div>
+              <div class="skills__skill"><img src="./assets/svg/typescript.svg" alt="typescript" class="skills-icon">Typescript</div>
+              <div class="skills__skill"><img src="./assets/svg/npm.svg" alt="npm" class="skills-icon">NPM</div>
+              <div class="skills__skill"><img src="./assets/svg/next-js.svg" alt="nextJS" class="skills-icon">NextJS</div>
+              <div class="skills__skill"><img src="./assets/svg/wordpress.svg" alt="wordpress" class="skills-icon">Wordpress</div>
             </div>
           </div>
         </div>
@@ -189,12 +192,8 @@
         <div class="projects__content">
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <a
-                href="https://edwin-mora.github.io/myFlix-Angular-Client/welcome"
-                target="_blank"
-              >
                 <img
-                  src="./assets/png/myflix-Angular.png"
+                  src="./assets/png/mockup-delgado.png"
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
@@ -204,12 +203,21 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 1</h3>
               <p class="projects__row-content-desc">
-                The aim of this project is to build the client-side for an
-                application called myFlix using Angular based on its existing
-                server-side code (REST API and database), with supporting
-                documentation. Go ahead and sign up and log in to view the movie
-                list and explore.
+                Delgago Flooring was my very first project done freelancing for a client. The client
+                comissioned me to create a landing page site for their small flooring business.
+                I created their website using wordpress and some minimal javascript, I gave the client
+                the ability to be contacted by potential customers through a contact form where
+                the customer's inquiries would be sent directly to the business owner's personal email. 
               </p>
+              <div class="new-btn">
+              <a
+                href="https://delgadoflooring.com/"
+                class="btn-live btn--theme btn--med btn--bg" 
+                target="_blank"
+                >Demo</a>
+              </div>
+              <br>
+<br>
               <a
                 href="https://github.com/edwin-mora/myFlix-Angular-Client/tree/master/myFlix-Angular-client"
                 class="btn btn--med btn--theme dynamicBgClr"
@@ -220,12 +228,8 @@
           </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <a
-                href="https://dashing-gumdrop-e44cc8.netlify.app/"
-                target="_blank"
-              >
                 <img
-                  src="./assets/png/myflix-react.png"
+                  src="./assets/png/mockup-airclone.png"
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
@@ -235,14 +239,21 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 2</h3>
               <p class="projects__row-content-desc">
-                Flexnit is a single page app that uses state routing and a
-                responsive UI library for a seamless, smooth experience. The app
-                provides movies from a dedicated API and allows users to view
-                information about the movies, Directors and Genres, and
-                add/remove Movies to a list of favorites. New users are able
-                register, registered users can login, interact with the app and
-                logout. Built mainly with React
+                The Airclone web app is my full stack project created with NextJS and ReactJS on the client side
+                and fetching data on the server side using Prisma and mongoDB. This web app is a clone of the popular
+                airbnb website and offers users the ability to sign up using Google, Github, or email. The users
+                also have the ability to favorite (heart) listings, rent out their own home, book
+                a reservation on any of the site's listings, and filter out listings based on their unique category.
               </p>
+                 <div class="new-btn">
+              <a
+                href="https://airclone-app.vercel.app/"
+                class="btn-live btn--theme btn--med btn--bg" 
+                target="_blank"
+                >Demo</a>
+              </div>
+              <br>
+<br>
               <a
                 href="https://github.com/edwin-mora/myFlix-clientv2/tree/master"
                 class="btn btn--med btn--theme dynamicBgClr"
@@ -265,12 +276,21 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 3</h3>
               <p class="projects__row-content-desc">
-                Meet is a progressive, serverless web application that uses the
+                Meet is a progressive, serverless web app that uses the
                 Google Calendar API to provide information about educational
                 events to full-stack developers. Users can filter events by
                 location, expand events to see detailed descriptions and view
-                summary event information using charts.
+                summaries of event information using charts provided on the Meet app.
               </p>
+                 <div class="new-btn">
+              <a
+                href="https://github.com/edwin-mora/myFlix-Angular-Client/tree/master/myFlix-Angular-client"
+                class="btn-live btn--theme btn--med btn--bg" 
+                target="_blank"
+                >Demo</a>
+              </div>
+              <br>
+<br>
               <a
                 href="https://github.com/edwin-mora/Meet"
                 class="btn btn--med btn--theme dynamicBgClr"
@@ -297,12 +317,20 @@
               <h3 class="projects__row-content-title">Project 4</h3>
               <p class="projects__row-content-desc">
                 This was my first JavaScript project. It consists of a Pokedex
-                app that will retrieve information from an API to display on a
-                usable app. It uses JS, HTML and CSS, and with external
+                app that will fetch data from the Pokemon API to display on a
+                usable app. The Pokedex app uses JavaScript, HTML and CSS, and with external
                 libraries like Bootstrap and JQuery, it ensures a better looking
-                and smoother performing app. You can search for any pokemon on
-                the top right!
+                and smoother performing app. Users can search for any pokemon on the web app!
               </p>
+                 <div class="new-btn">
+              <a
+                href="https://github.com/edwin-mora/myFlix-Angular-Client/tree/master/myFlix-Angular-client"
+                class="btn-live btn--theme btn--med btn--bg" 
+                target="_blank"
+                >Demo</a>
+              </div>
+              <br>
+<br>
               <a
                 href="https://github.com/edwin-mora/pokedex-js-app"
                 class="btn btn--med btn--theme dynamicBgClr"
@@ -311,7 +339,7 @@
               >
             </div>
           </div>
-          <div class="projects__row">
+          <!-- <div class="projects__row">
             <div class="projects__row-img-cont">
               <a href="https://imgur.com/a/y4HfIce"
               target="_blank">
@@ -321,21 +349,30 @@
                 class="projects__row-img"
                 loading="lazy"
               /> </a>
-            </div>
-            <div class="projects__row-content">
+            </div> -->
+            <!-- <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 5</h3>
               <p class="projects__row-content-desc">
                 Hello World is a simple chat app with location and image sharing
                 that uses Google's Firebase and GiftedChat. Click on the phone
                 in order to see images of the app in action on an iOS device.
               </p>
+                 <div class="new-btn">
+              <a
+                href="https://github.com/edwin-mora/myFlix-Angular-Client/tree/master/myFlix-Angular-client"
+                class="btn-live btn--theme btn--med btn--bg" 
+                target="_blank"
+                >Demo</a>
+              </div>
+              <br>
+<br>
               <a
                 href="https://github.com/edwin-mora/chat-app"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >Github</a
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -351,7 +388,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form action="https://formspree.io/f/xoqoqown" method="POST" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
